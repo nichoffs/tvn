@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I/opt/homebrew/opt/portaudio/include",
+      "-I/opt/homebrew/opt/fftw/include",
+      "-o",
+      "tvn",
+      "src/main.c"
+    ],
+    "directory": "/Users/nic/Projects/tvn",
+    "file": "/Users/nic/Projects/tvn/src/main.c",
+    "output": "/Users/nic/Projects/tvn/tvn"
+  }
+]
