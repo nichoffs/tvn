@@ -22,7 +22,7 @@ cd - > /dev/null
 [ -f "./transcription.txt" ] || { echo "Transcription failed: Output file not found."; exit 1; }
 
 # Prepare and send payload to model, handle response
-cat ./prompts/DEFAULT.txt ./transcription.txt > ./final_prompt.txt
+cat ./prompt.txt ./transcription.txt > ./final_prompt.txt
 JSON_PAYLOAD=$(jq -nc --arg model "phi3" --arg prompt "$(cat ./final_prompt.txt)" '{model: $model, prompt: $prompt, stream: false}')
 RESPONSE=$(curl -s -X POST -H "Content-Type: application/json" -d "$JSON_PAYLOAD" http://localhost:11434/api/generate)
 COMMAND=$(echo $RESPONSE | jq -r '.response' | awk '/```bash/{flag=1;next}/```/{flag=0}flag')
