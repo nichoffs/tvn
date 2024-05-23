@@ -3,9 +3,9 @@
 Voice-to-shell program, all in a single shell script.
 
 ## Requirements
-    - `mac`
-    - `sox` (for `rec`)
-    - `ollama` with `phi3` installed
+- `mac`
+- `sox` (for `rec`)
+- `ollama` with `phi3` installed
 
 ## How it Works
 
