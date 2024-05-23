@@ -6,6 +6,7 @@ Voice-to-shell program, all in a single shell script.
 - `mac`
 - `sox` (for `rec`)
 - `ollama` with `phi3` installed
+- `whisper.cpp` - I didn't include it in git repo but it is in `lib/whisper.cpp/` in my project. Clone there or change path to `whisper.cpp` in `tvn.sh`.
 
 ## How it Works
 
